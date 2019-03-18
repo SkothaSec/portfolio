@@ -56,6 +56,14 @@ resolve: {
 }
 ```
 
+**Set Up Jest Mocks**
+```js
+jest.mock('@atoms', () => require('@atoms/__mocks__/atoms.js'))
+jest.mock('@molecules', () => require('@molicules/__mocks__/molecules.js'))
+jest.mock('@organisms', () => require('@organisms/__mocks__/organisms.js'))
+jest.mock('@ecosystems', () => require('@ecosystems/__mocks__/ecosystems.js'))
+jest.mock('@environment', () => require('@environment/__mocks__/environment.js'))
+```
 
 
 ## Easy problems to hit:
